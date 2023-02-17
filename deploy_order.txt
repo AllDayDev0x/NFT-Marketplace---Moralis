@@ -1,0 +1,8 @@
+1. Deploy RoyaltySpliiter.sol with correct parameter (Royalty Split Address)
+2. Deploy the OGNFT.sol with correct parameter ("OG Watch Club Genesis", "OGWC1")
+3. Deploy OGWatchMarket.sol with correct parameter ([DAO Treasury, Metaverse Treasury, Marketing Treasury, OG Wallet], [20, 10, 10, 60])
+4. Call bulkMintAndApprove() on OGNFT contract (recipient of this function must be equal with owner of OGWatchMarket contract)
+5. Connect recipient address of NFT collection and call setApprovalForAll() on OGNFT contract to OGWatchMarket contract address.
+6. Set the moralis admin server correctly and launch dapp
+7. Call createMarketCollection() on OGWatchMarket contract (list NFT collection on Marketplace from owner wallet)
+8. Call setCollectionState() on OGWatchMarket contract
